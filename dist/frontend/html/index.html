@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="leftBarFirst">
+        <div id="head">
+            <div id="name">Discord</div>
+            <div id="logo">H</div>
+            <div id="line"></div>
+        </div>
+        <div id="grups">
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+            <div class="grupOne">
+                ABC
+                <div class="grupOneHover">deneme</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="leftBarSecond">
+        <div id="inputDiv">
+            <input type="text" id="inputText" placeholder="Sohbet bul ya da başlat">
+        </div>
+        <hr style="height:1px; background-color:rgb(26, 25, 25) ">
+        <div id=friendsHead>
+            <image src="frontend/model/friends.png" alt="friend" width="45px" height="35px"></image>
+            <p>Arkadaslar</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/User1.png"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/Profile.jpg"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/User1.png"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/Profile.jpg"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/User1.png"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/Profile.jpg"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/User1.png"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/Profile.jpg"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/User1.png"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/Profile.jpg"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/User1.png"></image>
+            <p>Hamza Aygun</p>
+        </div>
+        <div class=friends>
+            <image class="image2" alt="profile" src="/frontend/model/Profile.jpg"></image>
+            <p>Hamza Aygun</p>
+        </div>
+
+    </div>
+
+    <div id="mainBar">
+        <div id="mainBarHead">
+            <p id="userName">@ Arkadaslar</p>
+            <image id="iconCall" class="icon" src="/frontend/model/call.png" alt="Call"></image>
+            <image id="iconVideo" class="icon" src="/frontend/model/video.png" alt="Video"></image>
+            <image id="iconAddFriend" class="icon" src="/frontend/model/add.png" alt="Add"></image>
+            <input id="searchInput" type="text" placeholder="Ara">
+            <image id="iconHelp" class="icon" src="/frontend/model/help.png" alt="Help"></image>
+        </div>
+
+        <div id="messageBox">
+            <div class="messages" id="allMessagesArea">
+                <div class="oneMessage">
+                    <image class="oneMessageImage" src="/frontend/model/User1.png" alt="Profile"></image>
+                    <div class="upDiv">
+                        <div class="firstDiv">
+                            <div class="oneMessageUserName">Vedat Batin</div>
+                            <div class="oneMessageDate">18.01.2022</div>
+                        </div>
+                        <div class="oneMessageRealMessage">lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor
+                            sit am id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am id urna
+                        </div>
+                    </div>
+                </div>
+                <div class="oneMessage">
+                    <image class="oneMessageImage" src="/frontend/model/Profile.jpg" alt="Profile">
+                    </image>
+                    <div class="upDiv">
+                        <div class="firstDiv">
+                            <div class="oneMessageUserName">Vedat Batin</div>
+                            <div class="oneMessageDate">18.01.2022</div>
+                        </div>
+                        <div class="oneMessageRealMessage">lorem ipsum dolor sit am id urna
+                            pariatur.lorem ipsum dolor
+                            sit am id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem
+                            ipsum dolor sit am
+                            id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor
+                            sit am id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna
+                        </div>
+                    </div>
+                </div>
+                <div class="oneMessage">
+                    <image class="oneMessageImage" src="/frontend/model/User1.png" alt="Profile">
+                    </image>
+                    <div class="upDiv">
+                        <div class="firstDiv">
+                            <div class="oneMessageUserName">Vedat Batin</div>
+                            <div class="oneMessageDate">18.01.2022</div>
+                        </div>
+                        <div class="oneMessageRealMessage">lorem ipsum dolor sit am id urna
+                            pariatur.lorem ipsum dolor
+                            sit am id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem
+                            ipsum dolor sit am
+                            id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor
+                            sit am id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna
+                        </div>
+                    </div>
+                </div>
+                <div class="oneMessage">
+                    <image class="oneMessageImage" src="/frontend/model/Profile.jpg" alt="Profile">
+                    </image>
+                    <div class="upDiv">
+                        <div class="firstDiv">
+                            <div class="oneMessageUserName">Vedat Batin</div>
+                            <div class="oneMessageDate">18.01.2022</div>
+                        </div>
+                        <div class="oneMessageRealMessage">lorem ipsum dolor sit am id urna
+                            pariatur.lorem ipsum dolor
+                            sit am id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem
+                            ipsum dolor sit am
+                            id urna pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor
+                            sit am id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna
+                            pariatur.lorem ipsum dolor sit am id urna pariatur.lorem ipsum dolor sit am
+                            id urna
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controlInputBar">
+                <image class="messageIcon" id="plusLogo" alt="plusLogo" src="/frontend/model/plus.png"></image>
+                <input type="text" id="inputMessage" placeholder="Kanala mesaj gönder...">
+                <image class="messageIcon" id="smiles" alt="smiles" src="/frontend/model/smile.png"></image>
+                <button id="buttonMessage" class="btn btn-primary">Gönder</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+</script>
+<script src="frontend/lib/jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="frontend/js/index.js"></script>
+
+</html>
